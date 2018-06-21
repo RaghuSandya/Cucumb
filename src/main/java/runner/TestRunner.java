@@ -5,7 +5,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="C:/Users/Baburao/workspace/com.cucumber.selenium/freecrmBDDFramework/src/main/java/features/data.feature",
+@CucumberOptions(features="C:/Users/Baburao/workspace/com.cucumber.selenium/freecrmBDDFramework/src/main/java/features/dealMap.feature",
 					glue={"stepDefination"},
 					plugin={"html:target/cucumber-html-report",
 					"json:target/cucumber.json","junit:target/cucumber.xml"},
