@@ -3,76 +3,144 @@
     "line": 1,
     "elements": [
       {
-        "line": 3,
-        "name": "Login Page with valid data",
+        "line": 15,
+        "name": "Create the new company Details",
         "description": "",
-        "id": "freecrm-home-page;login-page-with-valid-data",
+        "id": "freecrm-webpage;create-the-new-company-details;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 18144207524,
+              "duration": 17005098364,
               "status": "passed"
             },
             "line": 4,
-            "name": "Free CRM home page",
+            "name": "User enter the home Page",
             "match": {
-              "location": "DataTable.free_CRM_home_page()"
+              "location": "Company.user_enter_the_home_Page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 6956513,
-              "error_message": "cucumber.runtime.CucumberException: Not a Map or List type: class stepDefination.DataTable\r\n\tat cucumber.runtime.table.TableConverter.convert(TableConverter.java:75)\r\n\tat cucumber.runtime.StepDefinitionMatch.tableArgument(StepDefinitionMatch.java:95)\r\n\tat cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:74)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:298)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:48)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:309)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:98)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)\r\n",
-              "status": "failed"
+              "duration": 1080492230,
+              "status": "passed"
             },
             "line": 5,
-            "name": "enter the username and password",
+            "name": "user enter the \"Giddaiah\"and\"Raghu123\"",
             "match": {
-              "location": "DataTable.enter_the_username_and_password(DataTable)"
+              "arguments": [
+                {
+                  "val": "Giddaiah",
+                  "offset": 16
+                },
+                {
+                  "val": "Raghu123",
+                  "offset": 29
+                }
+              ],
+              "location": "Company.user_enter_the_and(String,String)"
             },
-            "rows": [
-              {
-                "cells": [
-                  "Giddaiah",
-                  "Raghu123"
-                ],
-                "line": 6
-              }
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7689239841,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user click the login button",
+            "match": {
+              "location": "Company.user_click_the_login_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5169655442,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user mouse over the companies",
+            "match": {
+              "location": "Company.user_mouse_over_the_companies()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 251215009,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click the new company",
+            "match": {
+              "location": "Company.user_click_the_new_company()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1714905559,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enter company details\"AWS\"and\"Software\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AWS",
+                  "offset": 27
+                },
+                {
+                  "val": "Software",
+                  "offset": 35
+                }
+              ],
+              "location": "Company.user_enter_company_details_and(String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3
             ],
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 186528733,
+              "status": "passed"
             },
-            "line": 7,
-            "name": "click the login button",
+            "line": 10,
+            "name": "user  click the logout",
             "match": {
-              "location": "DataTable.click_the_login_button()"
+              "location": "Company.user_click_the_logout()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 351439310,
+              "status": "passed"
             },
-            "line": 8,
-            "name": "close the browser",
+            "line": 11,
+            "name": "user close browser",
             "match": {
-              "location": "DataTable.close_the_browser()"
+              "location": "Company.user_close_browser()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "FreeCRM Home Page",
+    "name": "FreeCRM WebPage",
     "description": "",
-    "id": "freecrm-home-page",
+    "id": "freecrm-webpage",
     "keyword": "Feature",
-    "uri": "C:/Users/Baburao/workspace/com.cucumber.selenium/freecrmBDDFramework/src/main/java/features/data.feature"
+    "uri": "C:/Users/Baburao/workspace/com.cucumber.selenium/freecrmBDDFramework/src/main/java/features/NewCompany.feature"
   }
 ]
