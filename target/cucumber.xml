@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="18.151164">
+<testcase classname="FreeCRM Home Page" name="Login Page with valid data" time="18.151164">
+<failure message="cucumber.runtime.CucumberException: Not a Map or List type: class stepDefination.DataTable&#13;&#10;&#9;at cucumber.runtime.table.TableConverter.convert(TableConverter.java:75)&#13;&#10;&#9;at cucumber.runtime.StepDefinitionMatch.tableArgument(StepDefinitionMatch.java:95)&#13;&#10;&#9;at cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:74)&#13;&#10;&#9;at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)&#13;&#10;&#9;at cucumber.runtime.Runtime.runStep(Runtime.java:298)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)&#13;&#10;&#9;at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)&#13;&#10;&#9;at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:48)&#13;&#10;&#9;at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.run(Cucumber.java:98)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;&#10;"><![CDATA[Given Free CRM home page....................................................passed
+Then enter the username and password........................................failed
+Then click the login button.................................................skipped
+Then close the browser......................................................skipped
+
+StackTrace:
+cucumber.runtime.CucumberException: Not a Map or List type: class stepDefination.DataTable
+	at cucumber.runtime.table.TableConverter.convert(TableConverter.java:75)
+	at cucumber.runtime.StepDefinitionMatch.tableArgument(StepDefinitionMatch.java:95)
+	at cucumber.runtime.StepDefinitionMatch.transformedArgs(StepDefinitionMatch.java:74)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:298)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:48)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:98)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+]]></failure>
+</testcase>
+</testsuite>
