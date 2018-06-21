@@ -1,218 +1,74 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/Baburao/workspace/com.cucumber.selenium/freecrmBDDFramework/src/main/java/features/NewCompany.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/Baburao/workspace/com.cucumber.selenium/freecrmBDDFramework/src/main/java/features/data.feature");
 formatter.feature({
   "line": 1,
-  "name": "FreeCRM WebPage",
+  "name": "Free_CRM_WebSite Page",
   "description": "",
-  "id": "freecrm-webpage",
+  "id": "free-crm-website-page",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
+formatter.scenario({
   "line": 3,
-  "name": "Create the new company Details",
+  "name": "Login with valid details Using DATA table",
   "description": "",
-  "id": "freecrm-webpage;create-the-new-company-details",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
+  "id": "free-crm-website-page;login-with-valid-details-using-data-table",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
   "line": 4,
-  "name": "User enter the home Page",
+  "name": "user is main page",
   "keyword": "Given "
 });
 formatter.step({
   "line": 5,
-  "name": "user enter the \"\u003cUsername\u003e\"and\"\u003cpassword\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 6,
-  "name": "user click the login button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 7,
-  "name": "user mouse over the companies",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 8,
-  "name": "user click the new company",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "user enter company details\"\u003cname\u003e\"and\"\u003cindustry\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "user  click the logout",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "user close browser",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 13,
-  "name": "",
-  "description": "",
-  "id": "freecrm-webpage;create-the-new-company-details;",
+  "name": "user enter username and password",
   "rows": [
     {
       "cells": [
-        "Username",
-        "password",
-        "name",
-        "industry"
-      ],
-      "line": 14,
-      "id": "freecrm-webpage;create-the-new-company-details;;1"
-    },
-    {
-      "cells": [
         "Giddaiah",
-        "Raghu123",
-        "AWS",
-        "Software"
+        "Raghu123"
       ],
-      "line": 15,
-      "id": "freecrm-webpage;create-the-new-company-details;;2"
+      "line": 6
     }
   ],
-  "keyword": "Examples"
-});
-formatter.scenario({
-  "line": 15,
-  "name": "Create the new company Details",
-  "description": "",
-  "id": "freecrm-webpage;create-the-new-company-details;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 4,
-  "name": "User enter the home Page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 5,
-  "name": "user enter the \"Giddaiah\"and\"Raghu123\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 6,
-  "name": "user click the login button",
   "keyword": "Then "
 });
 formatter.step({
   "line": 7,
-  "name": "user mouse over the companies",
+  "name": "user click the login button",
   "keyword": "Then "
 });
 formatter.step({
   "line": 8,
-  "name": "user click the new company",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "user enter company details\"AWS\"and\"Software\"",
-  "matchedColumns": [
-    2,
-    3
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "user  click the logout",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 11,
-  "name": "user close browser",
+  "name": "user close the browser",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Company.user_enter_the_home_Page()"
+  "location": "Datatble.user_is_main_page()"
 });
 formatter.result({
-  "duration": 17005098364,
+  "duration": 26372815150,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Giddaiah",
-      "offset": 16
-    },
-    {
-      "val": "Raghu123",
-      "offset": 29
-    }
-  ],
-  "location": "Company.user_enter_the_and(String,String)"
+  "location": "Datatble.user_enter_username_and_password(DataTable)"
 });
 formatter.result({
-  "duration": 1080492230,
+  "duration": 1946708927,
   "status": "passed"
 });
 formatter.match({
-  "location": "Company.user_click_the_login_button()"
+  "location": "Datatble.user_click_the_login_button()"
 });
 formatter.result({
-  "duration": 7689239841,
+  "duration": 7256587050,
   "status": "passed"
 });
 formatter.match({
-  "location": "Company.user_mouse_over_the_companies()"
+  "location": "Datatble.user_close_the_browser()"
 });
 formatter.result({
-  "duration": 5169655442,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Company.user_click_the_new_company()"
-});
-formatter.result({
-  "duration": 251215009,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "AWS",
-      "offset": 27
-    },
-    {
-      "val": "Software",
-      "offset": 35
-    }
-  ],
-  "location": "Company.user_enter_company_details_and(String,String)"
-});
-formatter.result({
-  "duration": 1714905559,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Company.user_click_the_logout()"
-});
-formatter.result({
-  "duration": 186528733,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Company.user_close_browser()"
-});
-formatter.result({
-  "duration": 351439310,
+  "duration": 20724718,
   "status": "passed"
 });
 });

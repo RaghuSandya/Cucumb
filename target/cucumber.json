@@ -3,144 +3,77 @@
     "line": 1,
     "elements": [
       {
-        "line": 15,
-        "name": "Create the new company Details",
+        "line": 3,
+        "name": "Login with valid details Using DATA table",
         "description": "",
-        "id": "freecrm-webpage;create-the-new-company-details;;2",
+        "id": "free-crm-website-page;login-with-valid-details-using-data-table",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 17005098364,
+              "duration": 26372815150,
               "status": "passed"
             },
             "line": 4,
-            "name": "User enter the home Page",
+            "name": "user is main page",
             "match": {
-              "location": "Company.user_enter_the_home_Page()"
+              "location": "Datatble.user_is_main_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1080492230,
+              "duration": 1946708927,
               "status": "passed"
             },
             "line": 5,
-            "name": "user enter the \"Giddaiah\"and\"Raghu123\"",
+            "name": "user enter username and password",
             "match": {
-              "arguments": [
-                {
-                  "val": "Giddaiah",
-                  "offset": 16
-                },
-                {
-                  "val": "Raghu123",
-                  "offset": 29
-                }
-              ],
-              "location": "Company.user_enter_the_and(String,String)"
+              "location": "Datatble.user_enter_username_and_password(DataTable)"
             },
-            "matchedColumns": [
-              0,
-              1
+            "rows": [
+              {
+                "cells": [
+                  "Giddaiah",
+                  "Raghu123"
+                ],
+                "line": 6
+              }
             ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 7689239841,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user click the login button",
-            "match": {
-              "location": "Company.user_click_the_login_button()"
-            },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 5169655442,
+              "duration": 7256587050,
               "status": "passed"
             },
             "line": 7,
-            "name": "user mouse over the companies",
+            "name": "user click the login button",
             "match": {
-              "location": "Company.user_mouse_over_the_companies()"
+              "location": "Datatble.user_click_the_login_button()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 251215009,
+              "duration": 20724718,
               "status": "passed"
             },
             "line": 8,
-            "name": "user click the new company",
+            "name": "user close the browser",
             "match": {
-              "location": "Company.user_click_the_new_company()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1714905559,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user enter company details\"AWS\"and\"Software\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "AWS",
-                  "offset": 27
-                },
-                {
-                  "val": "Software",
-                  "offset": 35
-                }
-              ],
-              "location": "Company.user_enter_company_details_and(String,String)"
-            },
-            "matchedColumns": [
-              2,
-              3
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 186528733,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user  click the logout",
-            "match": {
-              "location": "Company.user_click_the_logout()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 351439310,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user close browser",
-            "match": {
-              "location": "Company.user_close_browser()"
+              "location": "Datatble.user_close_the_browser()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "FreeCRM WebPage",
+    "name": "Free_CRM_WebSite Page",
     "description": "",
-    "id": "freecrm-webpage",
+    "id": "free-crm-website-page",
     "keyword": "Feature",
-    "uri": "C:/Users/Baburao/workspace/com.cucumber.selenium/freecrmBDDFramework/src/main/java/features/NewCompany.feature"
+    "uri": "C:/Users/Baburao/workspace/com.cucumber.selenium/freecrmBDDFramework/src/main/java/features/data.feature"
   }
 ]

@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="33.448574">
-<testcase classname="FreeCRM WebPage" name="Create the new company Details" time="33.448574">
-<system-out><![CDATA[Given User enter the home Page..............................................passed
-When user enter the "Giddaiah"and"Raghu123".................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="35.596836">
+<testcase classname="Free_CRM_WebSite Page" name="Login with valid details Using DATA table" time="35.596836">
+<system-out><![CDATA[Given user is main page.....................................................passed
+Then user enter username and password.......................................passed
 Then user click the login button............................................passed
-Then user mouse over the companies..........................................passed
-Then user click the new company.............................................passed
-Then user enter company details"AWS"and"Software"...........................passed
-Then user  click the logout.................................................passed
-Then user close browser.....................................................passed
+Then user close the browser.................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
