@@ -1,4 +1,4 @@
-package stepDefination;
+/*package stepDefination;
 
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
@@ -50,11 +50,11 @@ public class DealsMap {
 		driver.findElement(By.xpath("//a[@title='New Deal']")).click();
 	}
 
-	/*@Then("^user clicking the new deal$")
+	@Then("^user clicking the new deal$")
 	public void user_clicking_the_new_deal() throws Throwable {
 		driver.findElement(By.xpath("//a[@title='New Deal']")).click();
 
-	}*/
+	}
 
 	@Then("^user enter deal details$")
 	public void user_enter_deal_details(DataTable deal) throws Throwable {
@@ -65,18 +65,20 @@ public class DealsMap {
 			
 			driver.findElement(By.xpath("//input[@value='Save']")).click();
 			
-			WebElement el = driver.findElement(By.xpath("//a[@title='Deals']"));
+			
 			Actions ac = new Actions(driver);
+			Thread.sleep(5000);
+			WebElement el = driver.findElement(By.xpath("//a[@title='Deals']"));
 			ac.moveToElement(el).build().perform();
 			driver.findElement(By.xpath("//a[@title='New Deal']")).click();
 		
 		}
 	}
 
-	/*@Then("^user click the save button$")
+	@Then("^user click the save button$")
 	public void user_click_the_save_button() throws Throwable {
 		driver.findElement(By.xpath("//input[@value='Save']")).click();
-	}*/
+	}
 
 	@Then("^user close the browser$")
 	public void user_close_the_browser() throws Throwable {
@@ -84,3 +86,4 @@ public class DealsMap {
 	}
 
 }
+*/
